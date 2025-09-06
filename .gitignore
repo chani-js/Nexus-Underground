@@ -1,0 +1,26 @@
+# Fichiers de développement
+convert-to-webp.js
+*.log
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Fichiers de sauvegarde
+*.backup
+*.bak
+
+# Node modules (si vous en utilisez)
+node_modules/
+
+# Fichiers temporaires
+temp/
+tmp/

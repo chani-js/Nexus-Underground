@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Motors Underground - Véhicules Discrets</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="logo" id="main-title"></h1>
+        <p class="subtitle" id="main-subtitle"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="warning" id="warning-message">
+        ⚠️ <strong>RISQUE ÉLEVÉ:</strong> Ces véhicules peuvent être saisis et
+        détruits par la police à tout moment.
+      </div>
+
+      <!-- Onglets principales -->
+      <div class="main-tabs">
+        <button
+          class="main-tab-button active"
+          onclick="showMainTab('vehicles')"
+        >
+          🚗 VEHICULES
+        </button>
+        <button class="main-tab-button" onclick="showMainTab('weapons')">
+          🔫 ARMES
+        </button>
+        <button class="main-tab-button" onclick="showMainTab('blackmarket')">
+          💊 MARCHE NOIR
+        </button>
+        <button class="main-tab-button" onclick="showMainTab('services')">
+          🏠 SERVICES
+        </button>
+      </div>
+
+      <!-- Section Véhicules -->
+      <div id="vehicles" class="main-tab-content active">
+        <div class="sub-tabs">
+          <button class="sub-tab-button active" onclick="showSubTab('mc')">
+            🏍️ MC
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('mafia')">
+            🤵 MAFIA
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('cartel')">
+            💀 CARTEL
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('gang')">
+            🔫 GANG
+          </button>
+        </div>
+
+        <!-- Section MC -->
+        <div id="mc" class="sub-tab-content active">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section MAFIA -->
+        <div id="mafia" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section CARTEL -->
+        <div id="cartel" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section GANG -->
+        <div id="gang" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+      </div>
+
+      <!-- Section Armes -->
+      <div id="weapons" class="main-tab-content">
+        <div class="sub-tabs">
+          <button class="sub-tab-button active" onclick="showSubTab('pistols')">
+            Litteblue
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('rifles')">
+            Aztecas
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('explosives')">
+            Triade
+          </button>
+        </div>
+
+        <!-- Section Pistolets -->
+        <div id="pistols" class="sub-tab-content active">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section Fusils -->
+        <div id="rifles" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section Explosifs -->
+        <div id="explosives" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+      </div>
+
+      <!-- Section Marché Noir -->
+      <div id="blackmarket" class="main-tab-content">
+        <div class="sub-tabs">
+          <button class="sub-tab-button active" onclick="showSubTab('drugs')">
+            💊 DROGUES
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('contraband')">
+            📦 Marabunta
+          </button>
+          <button class="sub-tab-button" onclick="showSubTab('documents')">
+            📄 DOCUMENTS
+          </button>
+        </div>
+
+        <!-- Section Drogues -->
+        <div id="drugs" class="sub-tab-content active">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section Contrebande -->
+        <div id="contraband" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+
+        <!-- Section Documents -->
+        <div id="documents" class="sub-tab-content">
+          <div class="cars-grid"></div>
+        </div>
+      </div>
+
+      <!-- Section Services -->
+      <div id="services" class="main-tab-content">
+        <div class="sub-tabs">
+          <button
+            class="sub-tab-button active"
+            onclick="showSubTab('laundering')"
+          >
+            💰 BLANCHIMENT
+          </button>
+        </div>
+
+        <!-- Section Blanchiment -->
+        <div id="laundering" class="sub-tab-content active">
+          <div class="cars-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="contact-info">
+          <div class="contact-method">
+            <h3 class="footer-title">📱 Discord</h3>
+            <p id="discord-contact">Gally_Vehicles</p>
+            <p><em>Réponse rapide 24h/24</em></p>
+          </div>
+          <div class="contact-method">
+            <h3 class="footer-title">💬 En Jeu</h3>
+            <p id="ingame-contact">Gally</p>
+            <p>
+              <em id="contact-description">Rendez-vous discrets uniquement</em>
+            </p>
+          </div>
+          <div class="contact-method">
+            <h3 class="footer-title">🪐 Localisation</h3>
+            <p id="location-contact">Zone industrielle</p>
+            <p><em>Coordonnées par MP</em></p>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          <h4 class="disclaimer-title">Conditions de Vente</h4>
+          <p>
+            • Paiement intégral avant livraison uniquement en argent sale •
+            Aucune garantie officielle • Véhicules livrés dans l'état •
+            Modification possible sur demande • Discrétion absolue garantie •
+            Aucun papier officiel fourni
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
