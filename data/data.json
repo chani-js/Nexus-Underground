@@ -838,7 +838,7 @@
           "delai": "Selon stock",
           "garantie": "Aucune"
         },
-        "price": "150,000$"
+        "price": "5,000$"
       },
       {
         "name": "Chaise de torture",
@@ -849,7 +849,7 @@
           "delai": "Selon stock",
           "garantie": "Aucune"
         },
-        "price": "200,000$"
+        "price": "150,000$"
       },
       {
         "name": "Perçeuse",
@@ -860,7 +860,7 @@
           "delai": "Selon stock",
           "garantie": "Aucune"
         },
-        "price": "75,000$"
+        "price": "10,000$"
       }
     ]
   },
