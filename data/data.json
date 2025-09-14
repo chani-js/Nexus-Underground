@@ -1,1092 +1,1388 @@
 {
+  "config": {
+    "baseImageUrl": "assets/img/",
+    "currency": "USD",
+    "version": "1.0.0"
+  },
   "vehicles": {
     "mc": [
       {
+        "id": "mc_001",
         "name": "Rumpo3",
-        "image": "assets/img/vehicules/mc/rumpo3.png",
+        "image": "vehicules/mc/rumpo3.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_002",
         "name": "Lurcher",
-        "image": "assets/img/vehicules/mc/lurcher.png",
+        "image": "vehicules/mc/lurcher.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_003",
         "name": "Slave",
-        "image": "assets/img/vehicules/mc/slave.png",
+        "image": "vehicules/mc/slave.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_004",
         "name": "Krust",
-        "image": "assets/img/vehicules/mc/krust.png",
+        "image": "vehicules/mc/krust.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_005",
         "name": "SnBladec",
-        "image": "assets/img/vehicules/mc/snbladec.png",
+        "image": "vehicules/mc/snbladec.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_006",
         "name": "Fox Harley 1",
-        "image": "assets/img/vehicules/mc/foxharley1.png",
+        "image": "vehicules/mc/foxharley1.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_007",
         "name": "Fox Harley 2",
-        "image": "assets/img/vehicules/mc/foxharley2.png",
+        "image": "vehicules/mc/foxharley2.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_008",
         "name": "Softail1",
-        "image": "assets/img/vehicules/mc/softail1.png",
+        "image": "vehicules/mc/softail1.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_009",
         "name": "F131",
-        "image": "assets/img/vehicules/mc/f131.png",
+        "image": "vehicules/mc/f131.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_010",
         "name": "Dynals",
-        "image": "assets/img/vehicules/mc/dynals.png",
+        "image": "vehicules/mc/dynals.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_011",
         "name": "Dyna",
-        "image": "assets/img/vehicules/mc/dyna.png",
+        "image": "vehicules/mc/dyna.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_012",
         "name": "Templar",
-        "image": "assets/img/vehicules/mc/templar.png",
+        "image": "vehicules/mc/templar.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_013",
         "name": "Dabob",
-        "image": "assets/img/vehicules/mc/dabob.png",
+        "image": "vehicules/mc/dabob.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "mc_014",
         "name": "Darkfate",
-        "image": "assets/img/vehicules/mc/darkfate.png",
+        "image": "vehicules/mc/darkfate.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       }
     ],
     "mafia": [
       {
+        "id": "mafia_001",
         "name": "Goldwing",
-        "image": "assets/img/vehicules/mafia/goldwing.png",
+        "image": "vehicules/mafia/goldwing.png",
         "stats": {
           "vitesse": 5,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 4
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "luxury",
+        "availability": "available"
       },
       {
+        "id": "mafia_002",
         "name": "Tailgater",
-        "image": "assets/img/vehicules/mafia/tailgater.png",
+        "image": "vehicules/mafia/tailgater.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "sedan",
+        "availability": "available"
       },
       {
+        "id": "mafia_003",
         "name": "Cognoscenti",
-        "image": "assets/img/vehicules/mafia/cognoscenti.png",
+        "image": "vehicules/mafia/cognoscenti.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "luxury",
+        "availability": "available"
       },
       {
+        "id": "mafia_004",
         "name": "Dubsta",
-        "image": "assets/img/vehicules/mafia/dubsta.png",
+        "image": "vehicules/mafia/dubsta.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "suv",
+        "availability": "available"
       },
       {
+        "id": "mafia_005",
         "name": "Windsor",
-        "image": "assets/img/vehicules/mafia/windsor.png",
+        "image": "vehicules/mafia/windsor.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "coupe",
+        "availability": "available"
       }
     ],
     "cartel": [
       {
+        "id": "cartel_001",
         "name": "Outlaw",
-        "image": "assets/img/vehicules/cartel/outlaw.png",
+        "image": "vehicules/cartel/outlaw.png",
         "stats": {
           "vitesse": 5,
           "acceleration": 4,
           "freinage": 4,
           "maniabilite": 3
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "truck",
+        "availability": "available"
       },
       {
+        "id": "cartel_002",
         "name": "Toros",
-        "image": "assets/img/vehicules/cartel/toros.png",
+        "image": "vehicules/cartel/toros.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "sports",
+        "availability": "available"
       },
       {
+        "id": "cartel_003",
         "name": "Cliffhanger",
-        "image": "assets/img/vehicules/cartel/cliffhanger.png",
+        "image": "vehicules/cartel/cliffhanger.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "cartel_004",
         "name": "Dominator",
-        "image": "assets/img/vehicules/cartel/dominator.png",
+        "image": "vehicules/cartel/dominator.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "muscle",
+        "availability": "available"
       },
       {
+        "id": "cartel_005",
         "name": "Kuruma",
-        "image": "assets/img/vehicules/cartel/kuruma.png",
+        "image": "vehicules/cartel/kuruma.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "sedan",
+        "availability": "available"
       },
       {
+        "id": "cartel_006",
         "name": "Kamacho",
-        "image": "assets/img/vehicules/cartel/kamacho.png",
+        "image": "vehicules/cartel/kamacho.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "offroad",
+        "availability": "available"
       }
     ],
     "gang": [
       {
+        "id": "gang_001",
         "name": "Buccaneer",
-        "image": "assets/img/vehicules/gang/buccaneer.png",
+        "image": "vehicules/gang/buccaneer.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 5,
           "maniabilite": 4
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "muscle",
+        "availability": "available"
       },
       {
+        "id": "gang_002",
         "name": "Tornado",
-        "image": "assets/img/vehicules/gang/tornado.png",
+        "image": "vehicules/gang/tornado.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "lowrider",
+        "availability": "available"
       },
       {
+        "id": "gang_003",
         "name": "Sanchez",
-        "image": "assets/img/vehicules/gang/sanchez.png",
+        "image": "vehicules/gang/sanchez.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "motorcycle",
+        "availability": "available"
       },
       {
+        "id": "gang_004",
         "name": "Manana",
-        "image": "assets/img/vehicules/gang/manana.png",
+        "image": "vehicules/gang/manana.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "compact",
+        "availability": "available"
       },
       {
+        "id": "gang_005",
         "name": "Faction",
-        "image": "assets/img/vehicules/gang/faction.png",
+        "image": "vehicules/gang/faction.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "muscle",
+        "availability": "available"
       },
       {
+        "id": "gang_006",
         "name": "Chino",
-        "image": "assets/img/vehicules/gang/chino.png",
+        "image": "vehicules/gang/chino.png",
         "stats": {
           "vitesse": 4,
           "acceleration": 5,
           "freinage": 3,
           "maniabilite": 5
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "lowrider",
+        "availability": "available"
       }
     ]
   },
   "weapons": {
     "pistols": [
       {
+        "id": "pistol_001",
         "name": "Ap Pistol",
-        "image": "assets/img/weapon/legere/WEAPON_APPISTOL.png",
+        "image": "weapon/legere/WEAPON_APPISTOL.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 3,
           "portee": 3
         },
-        "price": "120,000$"
+        "price": 120000,
+        "category": "pistol",
+        "availability": "available"
       },
       {
+        "id": "pistol_002",
         "name": "Ceramic",
-        "image": "assets/img/weapon/legere/WEAPON_CERAMICPISTOL.png",
+        "image": "weapon/legere/WEAPON_CERAMICPISTOL.png",
         "stats": {
           "degats": 3,
           "precision": 4,
           "cadence": 5,
           "portee": 3
         },
-        "price": "75,000$"
+        "price": 75000,
+        "category": "pistol",
+        "availability": "available"
       },
       {
+        "id": "pistol_003",
         "name": "Combat Pistol",
-        "image": "assets/img/weapon/legere/WEAPON_COMBATPISTOL.png",
+        "image": "weapon/legere/WEAPON_COMBATPISTOL.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "125,000$"
+        "price": 125000,
+        "category": "pistol",
+        "availability": "available"
       },
       {
+        "id": "pistol_004",
         "name": "Flare Gun",
-        "image": "assets/img/weapon/legere/WEAPON_FLAREGUN.png",
+        "image": "weapon/legere/WEAPON_FLAREGUN.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "30,000$"
+        "price": 30000,
+        "category": "special",
+        "availability": "available"
       },
       {
+        "id": "pistol_005",
         "name": "Pistol MK 2",
-        "image": "assets/img/weapon/legere/WEAPON_PISTOL_MK2.png",
+        "image": "weapon/legere/WEAPON_PISTOL_MK2.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "155,000$"
+        "price": 155000,
+        "category": "pistol",
+        "availability": "available"
       },
       {
+        "id": "pistol_006",
         "name": "Pistol",
-        "image": "assets/img/weapon/legere/WEAPON_PISTOL.png",
+        "image": "weapon/legere/WEAPON_PISTOL.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "75,000$"
+        "price": 75000,
+        "category": "pistol",
+        "availability": "available"
       },
       {
+        "id": "pistol_007",
         "name": "Revolver",
-        "image": "assets/img/weapon/legere/WEAPON_REVOLVER.png",
+        "image": "weapon/legere/WEAPON_REVOLVER.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "245,000$"
+        "price": 245000,
+        "category": "revolver",
+        "availability": "available"
       },
       {
+        "id": "pistol_008",
         "name": "Shotgun",
-        "image": "assets/img/weapon/legere/WEAPON_SAWNOFFSHOTGUN.png",
+        "image": "weapon/legere/WEAPON_SAWNOFFSHOTGUN.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "550,000$"
+        "price": 550000,
+        "category": "shotgun",
+        "availability": "available"
       },
       {
+        "id": "pistol_009",
         "name": "Stun gun",
-        "image": "assets/img/weapon/legere/WEAPON_STUNGUN.png",
+        "image": "weapon/legere/WEAPON_STUNGUN.png",
         "stats": {
           "degats": 4,
           "precision": 5,
           "cadence": 3,
           "portee": 4
         },
-        "price": "195,000$"
+        "price": 195000,
+        "category": "special",
+        "availability": "available"
       }
     ],
     "rifles": [
       {
+        "id": "rifle_001",
         "name": "Assault Rifle",
-        "image": "assets/img/weapon/lourde/WEAPON_ASSAULTRIFLE.png",
+        "image": "weapon/lourde/WEAPON_ASSAULTRIFLE.png",
         "stats": {
-          "compo": 5,
-          "skin": 4,
+          "degats": 5,
+          "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "850,000$"
+        "price": 850000,
+        "category": "assault",
+        "availability": "available"
       },
       {
+        "id": "rifle_002",
         "name": "Gusenberg",
-        "image": "assets/img/weapon/lourde/WEAPON_GUSENBERG.png",
+        "image": "weapon/lourde/WEAPON_GUSENBERG.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "550,000$"
+        "price": 550000,
+        "category": "smg",
+        "availability": "available"
       },
       {
+        "id": "rifle_003",
         "name": "Sniper MK2",
-        "image": "assets/img/weapon/lourde/WEAPON_HEAVYSNIPER_MK2.png",
+        "image": "weapon/lourde/WEAPON_HEAVYSNIPER_MK2.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "1,000,000$"
+        "price": 1000000,
+        "category": "sniper",
+        "availability": "available"
       },
       {
+        "id": "rifle_004",
         "name": "Sniper",
-        "image": "assets/img/weapon/lourde/WEAPON_HEAVYSNIPER.png",
+        "image": "weapon/lourde/WEAPON_HEAVYSNIPER.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "900,000$"
+        "price": 900000,
+        "category": "sniper",
+        "availability": "available"
       },
       {
+        "id": "rifle_005",
         "name": "Micro SMG",
-        "image": "assets/img/weapon/lourde/WEAPON_MICROSMG.png",
+        "image": "weapon/lourde/WEAPON_MICROSMG.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "500,000$"
+        "price": 500000,
+        "category": "smg",
+        "availability": "available"
       },
       {
+        "id": "rifle_006",
         "name": "Mini SMG",
-        "image": "assets/img/weapon/lourde/WEAPON_MINISMG.png",
+        "image": "weapon/lourde/WEAPON_MINISMG.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "450,000$"
+        "price": 450000,
+        "category": "smg",
+        "availability": "available"
       },
       {
+        "id": "rifle_007",
         "name": "SMG",
-        "image": "assets/img/weapon/lourde/WEAPON_SMG.png",
+        "image": "weapon/lourde/WEAPON_SMG.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "600,000$"
+        "price": 600000,
+        "category": "smg",
+        "availability": "available"
       },
       {
+        "id": "rifle_008",
         "name": "Shotgun",
-        "image": "assets/img/weapon/lourde/WEAPON_PUMPSHOTGUN.png",
+        "image": "weapon/lourde/WEAPON_PUMPSHOTGUN.png",
         "stats": {
           "degats": 5,
           "precision": 4,
           "cadence": 4,
           "portee": 5
         },
-        "price": "650,000$"
+        "price": 650000,
+        "category": "shotgun",
+        "availability": "available"
       }
     ],
     "explosives": [
       {
+        "id": "explosive_001",
         "name": "Grenade smoke",
-        "image": "assets/img/weapon/explosif/WEAPON_SMOKEGRENADE.png",
+        "image": "weapon/explosif/WEAPON_SMOKEGRENADE.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "40,000$"
+        "price": 40000,
+        "category": "grenade",
+        "availability": "available"
       },
       {
+        "id": "explosive_002",
         "name": "Grenade BZ",
-        "image": "assets/img/weapon/explosif/WEAPON_BZGAS.png",
+        "image": "weapon/explosif/WEAPON_BZGAS.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "grenade",
+        "availability": "available"
       },
       {
+        "id": "explosive_003",
         "name": "Grenade Flare",
-        "image": "assets/img/weapon/explosif/WEAPON_FLARE.png",
+        "image": "weapon/explosif/WEAPON_FLARE.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "5,000$"
+        "price": 5000,
+        "category": "grenade",
+        "availability": "available"
       },
       {
+        "id": "explosive_004",
         "name": "C4",
-        "image": "assets/img/weapon/explosif/c4.png",
+        "image": "weapon/explosif/c4.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "5,000$"
+        "price": 5000,
+        "category": "explosive",
+        "availability": "available"
       },
       {
+        "id": "explosive_005",
         "name": "Big Bomb",
-        "image": "assets/img/weapon/explosif/big_bomb.png",
+        "image": "weapon/explosif/big_bomb.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "125,000$"
+        "price": 125000,
+        "category": "explosive",
+        "availability": "available"
       },
       {
+        "id": "explosive_006",
         "name": "Molotov",
-        "image": "assets/img/weapon/explosif/WEAPON_MOLOTOV.png",
+        "image": "weapon/explosif/WEAPON_MOLOTOV.png",
         "stats": {
           "degats": 5,
           "rayon": 4,
           "portee": 3,
-          "quantite": "x1"
+          "quantite": 1
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "incendiary",
+        "availability": "available"
       }
     ]
   },
   "blackmarket": {
     "drugs": [
       {
+        "id": "drug_001",
         "name": "Blue schtroumpf",
-        "image": "assets/img/black-market/drogues/bluedrank.png",
+        "image": "black-market/drogues/bluedrank.png",
         "stats": {
           "qualite": 5,
           "purete": 4,
-          "Format": "Bouteille",
-          "origine": "Locale"
-        }
+          "format": "bouteille",
+          "origine": "locale"
+        },
+        "category": "stimulant",
+        "availability": "available"
       },
       {
+        "id": "drug_002",
         "name": "Weed",
-        "image": "assets/img/black-market/drogues/cannabis_cayo.png",
+        "image": "black-market/drogues/cannabis_cayo.png",
         "stats": {
           "qualite": 5,
           "purete": 4,
-          "Format": "Feuilles",
-          "origine": "Locale"
-        }
+          "format": "feuilles",
+          "origine": "locale"
+        },
+        "category": "cannabis",
+        "availability": "available"
       },
       {
+        "id": "drug_003",
         "name": "LSD",
-        "image": "assets/img/black-market/drogues/drug_lsd.png",
+        "image": "black-market/drogues/drug_lsd.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Pillule",
-          "origine": "Locale"
-        }
+          "format": "pillule",
+          "origine": "locale"
+        },
+        "category": "hallucinogen",
+        "availability": "available"
       },
       {
+        "id": "drug_004",
         "name": "Krokodil",
-        "image": "assets/img/black-market/drogues/krokodil.png",
+        "image": "black-market/drogues/krokodil.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Seringue",
-          "origine": "Locale"
-        }
+          "format": "seringue",
+          "origine": "locale"
+        },
+        "category": "opiate",
+        "availability": "available"
       },
       {
+        "id": "drug_005",
         "name": "Meth",
-        "image": "assets/img/black-market/drogues/meth_cayo.png",
+        "image": "black-market/drogues/meth_cayo.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Pochon",
-          "origine": "Locale"
-        }
+          "format": "pochon",
+          "origine": "locale"
+        },
+        "category": "stimulant",
+        "availability": "available"
       },
       {
+        "id": "drug_006",
         "name": "Pain beuh",
-        "image": "assets/img/black-market/drogues/pain_beuh.png",
+        "image": "black-market/drogues/pain_beuh.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Pain",
-          "origine": "Locale"
-        }
+          "format": "pain",
+          "origine": "locale"
+        },
+        "category": "cannabis",
+        "availability": "available"
       },
       {
+        "id": "drug_007",
         "name": "Pain coke",
-        "image": "assets/img/black-market/drogues/pain_cocaine.png",
+        "image": "black-market/drogues/pain_cocaine.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Pain",
-          "origine": "Locale"
-        }
+          "format": "pain",
+          "origine": "locale"
+        },
+        "category": "stimulant",
+        "availability": "available"
       },
       {
+        "id": "drug_008",
         "name": "Pochon coke",
-        "image": "assets/img/black-market/drogues/pochon_cocaine.png",
+        "image": "black-market/drogues/pochon_cocaine.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Pochon",
-          "origine": "Locale"
-        }
+          "format": "pochon",
+          "origine": "locale"
+        },
+        "category": "stimulant",
+        "availability": "available"
       },
       {
+        "id": "drug_009",
         "name": "Omelette Champi",
-        "image": "assets/img/black-market/drogues/specialomelette.png",
+        "image": "black-market/drogues/specialomelette.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Omelette",
-          "origine": "Locale"
-        }
+          "format": "omelette",
+          "origine": "locale"
+        },
+        "category": "hallucinogen",
+        "availability": "available"
       },
       {
+        "id": "drug_010",
         "name": "Sang de démon",
-        "image": "assets/img/black-market/drogues/sungdevil.png",
+        "image": "black-market/drogues/sungdevil.png",
         "stats": {
           "qualite": 5,
           "purete": 5,
-          "Format": "Seringue",
-          "origine": "Locale"
-        }
+          "format": "seringue",
+          "origine": "locale"
+        },
+        "category": "special",
+        "availability": "available"
       }
     ],
     "contraband": [
       {
+        "id": "contraband_001",
         "name": "Lockpick",
-        "image": "assets/img/black-market/bloods/Lockpick.png",
+        "image": "black-market/bloods/Lockpick.png",
         "stats": {
           "qualite": 4,
-          "quantite": "1",
-          "origine": "Europe",
+          "quantite": 1,
+          "origine": "europe",
           "discretion": 3
         },
-        "price": "20,000$"
+        "price": 20000,
+        "category": "tool",
+        "availability": "available"
       },
       {
+        "id": "contraband_002",
         "name": "Cagoule",
-        "image": "assets/img/black-market/bloods/Cagoule.png",
+        "image": "black-market/bloods/Cagoule.png",
         "stats": {
           "qualite": 4,
-          "quantite": "1",
-          "origine": "Europe",
+          "quantite": 1,
+          "origine": "europe",
           "discretion": 3
         },
-        "price": "10,000$"
+        "price": 10000,
+        "category": "disguise",
+        "availability": "available"
       },
       {
-        "name": "Lock Pick Prenium",
-        "image": "assets/img/black-market/bloods/lockpick-car.png",
+        "id": "contraband_003",
+        "name": "Lock Pick Premium",
+        "image": "black-market/bloods/lockpick-car.png",
         "stats": {
           "qualite": 4,
-          "quantite": "1",
-          "Description": "Utilisable tout le temps en ville",
+          "quantite": 1,
+          "description": "Utilisable tout le temps en ville",
           "discretion": 3
         },
-        "price": "20,000$"
+        "price": 20000,
+        "category": "tool",
+        "availability": "available"
       },
       {
+        "id": "contraband_004",
         "name": "Lockpick Base",
-        "image": "assets/img/black-market/bloods/carlockpick.png",
+        "image": "black-market/bloods/carlockpick.png",
         "stats": {
           "qualite": 4,
-          "quantite": "1",
-          "Description": "Requiert la présence de policier en ville",
+          "quantite": 1,
+          "description": "Requiert la présence de policier en ville",
           "discretion": 3
         },
-        "price": "20,000$"
+        "price": 20000,
+        "category": "tool",
+        "availability": "available"
       }
     ],
     "documents": [
       {
+        "id": "document_001",
         "name": "Téléphone Hacker",
-        "image": "assets/img/black-market/ballas/hacker_phone.png",
+        "image": "black-market/ballas/hacker_phone.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "500,000$"
+        "price": 500000,
+        "category": "electronics",
+        "availability": "limited"
       },
       {
+        "id": "document_002",
         "name": "Hack tablette",
-        "image": "assets/img/black-market/ballas/hacktablet.png",
+        "image": "black-market/ballas/hacktablet.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "35,000$"
+        "price": 35000,
+        "category": "electronics",
+        "availability": "available"
       },
       {
+        "id": "document_003",
         "name": "Tuner tablette",
-        "image": "assets/img/black-market/ballas/tunertablet.png",
+        "image": "black-market/ballas/tunertablet.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "100,000$"
+        "price": 100000,
+        "category": "electronics",
+        "availability": "available"
       },
       {
+        "id": "document_004",
         "name": "Usb",
-        "image": "assets/img/black-market/ballas/hack_usb.png",
+        "image": "black-market/ballas/hack_usb.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "20,000$"
+        "price": 20000,
+        "category": "electronics",
+        "availability": "available"
       },
       {
+        "id": "document_005",
         "name": "Véhicule tracker",
-        "image": "assets/img/black-market/ballas/vehicletracker.png",
+        "image": "black-market/ballas/vehicletracker.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "15,000$"
+        "price": 15000,
+        "category": "tracking",
+        "availability": "available"
       },
       {
+        "id": "document_006",
         "name": "Balise Gps",
-        "image": "assets/img/black-market/ballas/vehiclegps.png",
+        "image": "black-market/ballas/vehiclegps.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "Selon disponibilité",
-          "garantie": "Aucune"
+          "delai": "Selon disponibilite",
+          "garantie": "aucune"
         },
-        "price": "15,000$"
+        "price": 15000,
+        "category": "tracking",
+        "availability": "available"
       }
     ],
     "vagos": [
       {
+        "id": "vagos_001",
         "name": "Gilet Pare-balles",
-        "image": "assets/img/black-market/vagos/armour.png",
+        "image": "black-market/vagos/armour.png",
         "stats": {
           "qualite": 4,
           "authenticite": 5,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "5,000$"
+        "price": 5000,
+        "category": "protection",
+        "availability": "available"
       },
       {
+        "id": "vagos_002",
         "name": "Chaise de torture",
-        "image": "assets/img/black-market/vagos/torturechair.png",
+        "image": "black-market/vagos/torturechair.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "150,000$"
+        "price": 150000,
+        "category": "furniture",
+        "availability": "limited"
       },
       {
-        "name": "Perçeuse",
-        "image": "assets/img/black-market/vagos/dhandledrill.png",
+        "id": "vagos_003",
+        "name": "Perceuse",
+        "image": "black-market/vagos/dhandledrill.png",
         "stats": {
           "qualite": 4,
           "authenticite": 4,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "10,000$"
+        "price": 10000,
+        "category": "tool",
+        "availability": "available"
       }
     ],
     "catalyst": [
       {
+        "id": "catalyst_001",
         "name": "Eau de vie Pomme",
-        "image": "assets/img/black-market/catalyst/apple.png",
+        "image": "black-market/catalyst/apple.png",
         "stats": {
           "qualite": 5,
-          "degre": "45°",
+          "degre": 45,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_002",
         "name": "Eau de vie Abricot",
-        "image": "assets/img/black-market/catalyst/apricot.png",
+        "image": "black-market/catalyst/apricot.png",
         "stats": {
           "qualite": 4,
-          "degre": "40°",
+          "degre": 40,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_003",
         "name": "Eau de vie Banane",
-        "image": "assets/img/black-market/catalyst/banana.png",
+        "image": "black-market/catalyst/banana.png",
         "stats": {
           "qualite": 5,
-          "degre": "55°",
+          "degre": 55,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_004",
         "name": "Eau de vie Mûres",
-        "image": "assets/img/black-market/catalyst/blackberry.png",
+        "image": "black-market/catalyst/blackberry.png",
         "stats": {
           "qualite": 4,
-          "degre": "68°",
-          "delai": "selon stock",
-          "garantie": "Recette traditionnelle"
+          "degre": 68,
+          "delai": "Selon stock",
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_005",
         "name": "Eau de vie Myrtille",
-        "image": "assets/img/black-market/catalyst/blueberry.png",
+        "image": "black-market/catalyst/blueberry.png",
         "stats": {
           "qualite": 3,
-          "degre": "38°",
+          "degre": 38,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_006",
         "name": "eau de vie Cerises",
-        "image": "assets/img/black-market/catalyst/cherries.png",
+        "image": "black-market/catalyst/cherries.png",
         "stats": {
           "qualite": 5,
-          "degre": "42°",
+          "degre": 42,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_007",
         "name": "Eau de vie Raisin",
-        "image": "assets/img/black-market/catalyst/grape.png",
+        "image": "black-market/catalyst/grape.png",
         "stats": {
           "qualite": 2,
-          "degre": "60°",
+          "degre": 60,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_008",
         "name": "Eau de vie Kiwi",
-        "image": "assets/img/black-market/catalyst/kiwi.png",
+        "image": "black-market/catalyst/kiwi.png",
         "stats": {
           "qualite": 4,
-          "degre": "44°",
+          "degre": 44,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_009",
         "name": "Eau de vie mangue",
-        "image": "assets/img/black-market/catalyst/mango.png",
+        "image": "black-market/catalyst/mango.png",
         "stats": {
           "qualite": 5,
-          "degre": "12°",
+          "degre": 12,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_010",
         "name": "Eau de vie Orange",
-        "image": "assets/img/black-market/catalyst/orange.png",
+        "image": "black-market/catalyst/orange.png",
         "stats": {
           "qualite": 4,
-          "degre": "16°",
+          "degre": 16,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_011",
         "name": "Eau de vie pêche",
-        "image": "assets/img/black-market/catalyst/peach.png",
+        "image": "black-market/catalyst/peach.png",
         "stats": {
           "qualite": 5,
-          "degre": "50°",
+          "degre": 50,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_012",
         "name": "Eau de vie Ananas",
-        "image": "assets/img/black-market/catalyst/pineapple.png",
+        "image": "black-market/catalyst/pineapple.png",
         "stats": {
           "qualite": 3,
-          "degre": "45°",
+          "degre": 45,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_013",
         "name": "Eau de vie Prune",
-        "image": "assets/img/black-market/catalyst/plum.png",
+        "image": "black-market/catalyst/plum.png",
         "stats": {
           "qualite": 4,
-          "degre": "42°",
+          "degre": 42,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_014",
         "name": "Eau de vie Framboise",
-        "image": "assets/img/black-market/catalyst/raspberry.png",
+        "image": "black-market/catalyst/raspberry.png",
         "stats": {
           "qualite": 4,
-          "degre": "48°",
+          "degre": 48,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_015",
         "name": "Eau de vie Fraise",
-        "image": "assets/img/black-market/catalyst/strawberry.png",
+        "image": "black-market/catalyst/strawberry.png",
         "stats": {
           "qualite": 5,
-          "degre": "40°",
+          "degre": 40,
           "delai": "Selon stock",
-          "garantie": "Recette traditionnelle"
+          "garantie": "recette_traditionnelle"
         },
-        "price": "1,000$"
+        "price": 1000,
+        "category": "spirit",
+        "availability": "available"
       },
       {
+        "id": "catalyst_016",
         "name": "Tuyau cuivre",
-        "image": "assets/img/black-market/catalyst/coil.png",
+        "image": "black-market/catalyst/coil.png",
         "stats": {
           "qualite": 5,
-          "degre": "",
+          "degre": null,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "equipment",
+        "availability": "available"
       },
       {
+        "id": "catalyst_017",
         "name": "Alembic part 1",
-        "image": "assets/img/black-market/catalyst/stillpart1.png",
+        "image": "black-market/catalyst/stillpart1.png",
         "stats": {
           "qualite": 5,
-          "degre": "",
+          "degre": null,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "equipment",
+        "availability": "available"
       },
       {
+        "id": "catalyst_018",
         "name": "Alembic part 2",
-        "image": "assets/img/black-market/catalyst/stillpart2.png",
+        "image": "black-market/catalyst/stillpart2.png",
         "stats": {
           "qualite": 5,
-          "degre": "",
+          "degre": null,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "equipment",
+        "availability": "available"
       },
       {
+        "id": "catalyst_019",
         "name": "Alembic part 3",
-        "image": "assets/img/black-market/catalyst/stillpart3.png",
+        "image": "black-market/catalyst/stillpart3.png",
         "stats": {
           "qualite": 5,
-          "degre": "",
+          "degre": null,
           "delai": "Selon stock",
-          "garantie": "Aucune"
+          "garantie": "aucune"
         },
-        "price": "25,000$"
+        "price": 25000,
+        "category": "equipment",
+        "availability": "available"
       }
     ]
   },
   "services": {
     "laundering": [
       {
+        "id": "service_001",
         "name": "Aether",
-        "image": "assets/img/service/blanchiment/blanchiment.png",
+        "image": "service/blanchiment/blanchiment.png",
         "stats": {
-          "capaciteMax": "1M$",
-          "capaciteMin": "300K$",
+          "capacite_max": 1000000,
+          "capacite_min": 300000,
           "delai": "2h",
           "discretion": 5
         },
-        "price": "20%"
+        "price_percentage": 20,
+        "category": "money_laundering",
+        "availability": "available"
       }
     ]
   }

@@ -1,4 +1,4 @@
-// js/main.js - Version corrigée qui fonctionne
+// js/main.js - Version complète corrigée
 // Combinaison du système de données et de l'interface utilisateur
 
 // Configuration et constantes
@@ -148,6 +148,32 @@ const Utils = {
   },
 };
 
+// Fonction pour formater les prix avec la devise
+function formatPrice(price) {
+  if (!price) return "Prix sur demande";
+
+  // Si le prix contient déjà une devise, le retourner tel quel
+  if (
+    typeof price === "string" &&
+    (price.includes("$") || price.includes("€"))
+  ) {
+    return price;
+  }
+
+  // Si c'est un nombre, le formater avec la devise
+  if (typeof price === "number") {
+    return price.toLocaleString() + "$";
+  }
+
+  // Si c'est une chaîne de nombres, l'extraire et formater
+  const numericPrice = price.toString().replace(/[^0-9]/g, "");
+  if (numericPrice) {
+    return parseInt(numericPrice).toLocaleString() + "$";
+  }
+
+  return price;
+}
+
 // Gestion de l'état de l'application
 const AppState = {
   currentCategory: CATEGORIES.VEHICLES,
@@ -181,23 +207,55 @@ async function loadSiteData() {
     siteData = {
       vehicles: { mc: [], mafia: [], cartel: [], gang: [] },
       weapons: { pistols: [], rifles: [], explosives: [] },
-      blackmarket: { drugs: [], contraband: [], documents: [] },
+      blackmarket: {
+        drugs: [],
+        contraband: [],
+        documents: [],
+        vagos: [],
+        catalyst: [],
+      },
       services: { laundering: [] },
     };
     return siteData;
   }
 }
 
-// Fonction pour générer les étoiles
+// Fonction utilitaire pour construire le chemin d'image
+function buildImagePath(imagePath) {
+  if (!imagePath) return "";
+
+  // Si le chemin commence déjà par "assets/" ou "http", l'utiliser tel quel
+  if (imagePath.startsWith("assets/") || imagePath.startsWith("http")) {
+    return imagePath;
+  }
+
+  // Sinon, ajouter le préfixe assets/img/
+  return `assets/img/${imagePath}`;
+}
+
+// Fonction pour créer l'élément image
+function createImageElement(imagePath, altText) {
+  if (!imagePath) return '<div class="no-image">Image non disponible</div>';
+
+  const fullPath = buildImagePath(imagePath);
+  return `<img src="${fullPath}" alt="${altText}" loading="lazy" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\\'image-error\\'>Image manquante</div>';">`;
+}
+
+// Fonction pour générer les étoiles - CORRIGÉE
 function generateStars(rating) {
-  return "★".repeat(rating) + "☆".repeat(5 - rating);
+  // Vérification et normalisation de la valeur
+  const normalizedRating = Math.max(0, Math.min(5, parseInt(rating) || 0));
+  return "★".repeat(normalizedRating) + "☆".repeat(5 - normalizedRating);
 }
 
 // Fonction pour générer une carte de véhicule
 function generateVehicleCard(vehicle) {
-  const imageContent = vehicle.image.includes("img/")
-    ? `<img src="${vehicle.image}" alt="${vehicle.name}" loading="lazy">`
-    : vehicle.image;
+  if (!vehicle || !vehicle.name) {
+    console.warn("Vehicle data is invalid:", vehicle);
+    return "";
+  }
+
+  const imageContent = createImageElement(vehicle.image, vehicle.name);
 
   return `
     <div class="car-card">
@@ -205,19 +263,19 @@ function generateVehicleCard(vehicle) {
       <div class="car-image">${imageContent}</div>
       <div class="car-details">
         <div class="detail-item"><span class="detail-label">Vitesse:</span> ${generateStars(
-          vehicle.stats.vitesse
+          vehicle.stats?.vitesse || 0
         )}</div>
         <div class="detail-item"><span class="detail-label">Accélération:</span> ${generateStars(
-          vehicle.stats.acceleration
+          vehicle.stats?.acceleration || 0
         )}</div>
         <div class="detail-item"><span class="detail-label">Freinage:</span> ${generateStars(
-          vehicle.stats.freinage
+          vehicle.stats?.freinage || 0
         )}</div>
         <div class="detail-item"><span class="detail-label">Maniabilité:</span> ${generateStars(
-          vehicle.stats.maniabilite
+          vehicle.stats?.maniabilite || 0
         )}</div>
       </div>
-      <div class="price">💰 ${vehicle.price}</div>
+      <div class="price">💰 ${formatPrice(vehicle.price)}</div>
       <button class="contact-btn" onclick="contact('${
         vehicle.name
       }')">Contacter pour ce véhicule</button>
@@ -227,24 +285,30 @@ function generateVehicleCard(vehicle) {
 
 // Fonction pour générer une carte d'arme
 function generateWeaponCard(weapon) {
-  const imageContent = weapon.image.includes("img/")
-    ? `<img src="${weapon.image}" alt="${weapon.name}" loading="lazy">`
-    : weapon.image;
+  if (!weapon || !weapon.name) {
+    console.warn("Weapon data is invalid:", weapon);
+    return "";
+  }
 
-  const statsKeys = Object.keys(weapon.stats);
+  const imageContent = createImageElement(weapon.image, weapon.name);
+
+  const statsKeys = Object.keys(weapon.stats || {});
   const statsHTML = statsKeys
     .map((key) => {
       let label = key.charAt(0).toUpperCase() + key.slice(1);
       if (key === "degats") label = "Dégâts";
       if (key === "precision") label = "Précision";
       if (key === "portee") label = "Portée";
+      if (key === "compo") label = "Dégâts";
+      if (key === "skin") label = "Précision";
 
-      const value =
-        typeof weapon.stats[key] === "number"
-          ? generateStars(weapon.stats[key])
-          : weapon.stats[key];
+      const value = weapon.stats[key];
+      const displayValue =
+        typeof value === "number" && value >= 0 && value <= 5
+          ? generateStars(value)
+          : value || "N/A";
 
-      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${value}</div>`;
+      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${displayValue}</div>`;
     })
     .join("");
 
@@ -255,31 +319,37 @@ function generateWeaponCard(weapon) {
       <div class="car-details">
         ${statsHTML}
       </div>
-      <div class="price">💰 ${weapon.price}</div>
-      <button class="contact-btn" onclick="contact('${weapon.name}')">Contacter pour cette arme</button>
+      <div class="price">💰 ${formatPrice(weapon.price)}</div>
+      <button class="contact-btn" onclick="contact('${
+        weapon.name
+      }')">Contacter pour cette arme</button>
     </div>
   `;
 }
 
 // Fonction pour générer une carte de drogue (sans prix ni contact)
 function generateDrugCard(drug) {
-  const imageContent = drug.image.includes("img/")
-    ? `<img src="${drug.image}" alt="${drug.name}" loading="lazy">`
-    : drug.image;
+  if (!drug || !drug.name) {
+    console.warn("Drug data is invalid:", drug);
+    return "";
+  }
 
-  const statsKeys = Object.keys(drug.stats);
+  const imageContent = createImageElement(drug.image, drug.name);
+
+  const statsKeys = Object.keys(drug.stats || {});
   const statsHTML = statsKeys
     .map((key) => {
       let label = key.charAt(0).toUpperCase() + key.slice(1);
       if (key === "qualite") label = "Qualité";
       if (key === "purete") label = "Pureté";
 
-      const value =
-        typeof drug.stats[key] === "number"
-          ? generateStars(drug.stats[key])
-          : drug.stats[key];
+      const value = drug.stats[key];
+      const displayValue =
+        typeof value === "number" && value >= 0 && value <= 5
+          ? generateStars(value)
+          : value || "N/A";
 
-      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${value}</div>`;
+      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${displayValue}</div>`;
     })
     .join("");
 
@@ -297,11 +367,14 @@ function generateDrugCard(drug) {
 
 // Fonction pour générer une carte de marché noir (autres que drogues)
 function generateBlackmarketCard(item) {
-  const imageContent = item.image.includes("img/")
-    ? `<img src="${item.image}" alt="${item.name}" loading="lazy">`
-    : item.image;
+  if (!item || !item.name) {
+    console.warn("Blackmarket item data is invalid:", item);
+    return "";
+  }
 
-  const statsKeys = Object.keys(item.stats);
+  const imageContent = createImageElement(item.image, item.name);
+
+  const statsKeys = Object.keys(item.stats || {});
   const statsHTML = statsKeys
     .map((key) => {
       let label = key.charAt(0).toUpperCase() + key.slice(1);
@@ -313,12 +386,13 @@ function generateBlackmarketCard(item) {
       if (key === "delai") label = "Délai";
       if (key === "garantie") label = "Garantie";
 
-      const value =
-        typeof item.stats[key] === "number"
-          ? generateStars(item.stats[key])
-          : item.stats[key];
+      const value = item.stats[key];
+      const displayValue =
+        typeof value === "number" && value >= 0 && value <= 5
+          ? generateStars(value)
+          : value || "N/A";
 
-      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${value}</div>`;
+      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${displayValue}</div>`;
     })
     .join("");
 
@@ -329,19 +403,24 @@ function generateBlackmarketCard(item) {
       <div class="car-details">
         ${statsHTML}
       </div>
-      <div class="price">💰 ${item.price}</div>
-      <button class="contact-btn" onclick="contact('${item.name}')">Contacter pour ce produit</button>
+     <div class="price">💰 ${formatPrice(item.price)}</div>
+      <button class="contact-btn" onclick="contact('${
+        item.name
+      }')">Contacter pour ce produit</button>
     </div>
   `;
 }
 
 // Fonction pour générer une carte de service
 function generateServiceCard(service) {
-  const imageContent = service.image.includes("img/")
-    ? `<img src="${service.image}" alt="${service.name}" loading="lazy">`
-    : service.image;
+  if (!service || !service.name) {
+    console.warn("Service data is invalid:", service);
+    return "";
+  }
 
-  const statsKeys = Object.keys(service.stats);
+  const imageContent = createImageElement(service.image, service.name);
+
+  const statsKeys = Object.keys(service.stats || {});
   const statsHTML = statsKeys
     .map((key) => {
       let label = key.charAt(0).toUpperCase() + key.slice(1);
@@ -350,12 +429,13 @@ function generateServiceCard(service) {
       if (key === "delai") label = "Délai";
       if (key === "discretion") label = "Discrétion";
 
-      const value =
-        typeof service.stats[key] === "number"
-          ? generateStars(service.stats[key])
-          : service.stats[key];
+      const value = service.stats[key];
+      const displayValue =
+        typeof value === "number" && value >= 0 && value <= 5
+          ? generateStars(value)
+          : value || "N/A";
 
-      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${value}</div>`;
+      return `<div class="detail-item"><span class="detail-label">${label}:</span> ${displayValue}</div>`;
     })
     .join("");
 
@@ -366,8 +446,10 @@ function generateServiceCard(service) {
       <div class="car-details">
         ${statsHTML}
       </div>
-      <div class="price">💰 ${service.price}</div>
-      <button class="contact-btn" onclick="contact('${service.name}')">Contacter pour ce service</button>
+      <div class="price">💰 ${formatPrice(service.price)}</div>
+      <button class="contact-btn" onclick="contact('${
+        service.name
+      }')">Contacter pour ce service</button>
     </div>
   `;
 }
@@ -652,52 +734,70 @@ async function initializeContent() {
     return;
   }
 
-  // Véhicules
-  Object.keys(siteData.vehicles).forEach((category) => {
-    const container = document.querySelector(`#${category} .cars-grid`);
-    if (container && siteData.vehicles[category]) {
-      container.innerHTML = siteData.vehicles[category]
-        .map(generateVehicleCard)
-        .join("");
+  try {
+    // Véhicules
+    if (siteData.vehicles) {
+      Object.keys(siteData.vehicles).forEach((category) => {
+        const container = document.querySelector(`#${category} .cars-grid`);
+        if (container && Array.isArray(siteData.vehicles[category])) {
+          container.innerHTML = siteData.vehicles[category]
+            .map(generateVehicleCard)
+            .filter((card) => card) // Enlever les cartes vides
+            .join("");
+        }
+      });
     }
-  });
 
-  // Armes
-  Object.keys(siteData.weapons).forEach((category) => {
-    const container = document.querySelector(`#${category} .cars-grid`);
-    if (container && siteData.weapons[category]) {
-      container.innerHTML = siteData.weapons[category]
-        .map(generateWeaponCard)
-        .join("");
+    // Armes
+    if (siteData.weapons) {
+      Object.keys(siteData.weapons).forEach((category) => {
+        const container = document.querySelector(`#${category} .cars-grid`);
+        if (container && Array.isArray(siteData.weapons[category])) {
+          container.innerHTML = siteData.weapons[category]
+            .map(generateWeaponCard)
+            .filter((card) => card)
+            .join("");
+        }
+      });
     }
-  });
 
-  // Marché noir
-  Object.keys(siteData.blackmarket).forEach((category) => {
-    const container = document.querySelector(`#${category} .cars-grid`);
-    if (container && siteData.blackmarket[category]) {
-      // Traitement spécial pour les drogues
-      if (category === "drugs") {
-        container.innerHTML = siteData.blackmarket[category]
-          .map(generateDrugCard)
-          .join("");
-      } else {
-        container.innerHTML = siteData.blackmarket[category]
-          .map(generateBlackmarketCard)
-          .join("");
-      }
+    // Marché noir
+    if (siteData.blackmarket) {
+      Object.keys(siteData.blackmarket).forEach((category) => {
+        const container = document.querySelector(`#${category} .cars-grid`);
+        if (container && Array.isArray(siteData.blackmarket[category])) {
+          // Traitement spécial pour les drogues
+          if (category === "drugs") {
+            container.innerHTML = siteData.blackmarket[category]
+              .map(generateDrugCard)
+              .filter((card) => card)
+              .join("");
+          } else {
+            container.innerHTML = siteData.blackmarket[category]
+              .map(generateBlackmarketCard)
+              .filter((card) => card)
+              .join("");
+          }
+        }
+      });
     }
-  });
 
-  // Services
-  Object.keys(siteData.services).forEach((category) => {
-    const container = document.querySelector(`#${category} .cars-grid`);
-    if (container && siteData.services[category]) {
-      container.innerHTML = siteData.services[category]
-        .map(generateServiceCard)
-        .join("");
+    // Services
+    if (siteData.services) {
+      Object.keys(siteData.services).forEach((category) => {
+        const container = document.querySelector(`#${category} .cars-grid`);
+        if (container && Array.isArray(siteData.services[category])) {
+          container.innerHTML = siteData.services[category]
+            .map(generateServiceCard)
+            .filter((card) => card)
+            .join("");
+        }
+      });
     }
-  });
+
+  } catch (error) {
+    console.error("❌ Erreur lors de l'initialisation du contenu:", error);
+  }
 }
 
 // === INITIALISATION PRINCIPALE ===
@@ -719,9 +819,43 @@ class App {
       // Configuration de l'API globale
       this.setupGlobalAPI();
 
+      // Ajouter les styles pour les erreurs d'images
+      this.addImageErrorStyles();
+
       this.isInitialized = true;
     } catch (error) {
       console.error("❌ Erreur lors de l'initialisation:", error);
+    }
+  }
+
+  addImageErrorStyles() {
+    if (!document.getElementById("image-error-styles")) {
+      const style = document.createElement("style");
+      style.id = "image-error-styles";
+      style.textContent = `
+        .no-image, .image-error {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          min-height: 150px;
+          background: rgba(40, 40, 40, 0.8);
+          color: #888;
+          font-size: 0.9em;
+          text-align: center;
+          border-radius: 5px;
+          border: 1px dashed #555;
+        }
+
+        .car-image img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain;
+          display: block;
+          margin: 0 auto;
+        }
+      `;
+      document.head.appendChild(style);
     }
   }
 
