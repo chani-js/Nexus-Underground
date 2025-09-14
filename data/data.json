@@ -762,37 +762,105 @@
     ],
     "documents": [
       {
-        "name": "Permis de conduire",
-        "image": "📸 Photo sur demande",
+        "name": "Téléphone Hacker",
+        "image": "assets/img/black-market/ballas/hacker_phone.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "48h",
-          "garantie": "6 mois"
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
         },
-        "price": "1,500$"
+        "price": "500,000$"
       },
       {
-        "name": "Permis de conduire",
-        "image": "📸 Photo sur demande",
+        "name": "Hack tablette",
+        "image": "assets/img/black-market/ballas/hacktablet.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "48h",
-          "garantie": "6 mois"
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
         },
-        "price": "1,500$"
+        "price": "35,000$"
       },
       {
-        "name": "Permis de conduire",
-        "image": "📸 Photo sur demande",
+        "name": "Tuner tablette",
+        "image": "assets/img/black-market/ballas/tunertablet.png",
         "stats": {
           "qualite": 5,
           "authenticite": 4,
-          "delai": "48h",
-          "garantie": "6 mois"
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
         },
-        "price": "1,500$"
+        "price": "100,000$"
+      },
+      {
+        "name": "Usb",
+        "image": "assets/img/black-market/ballas/hack_usb.png",
+        "stats": {
+          "qualite": 5,
+          "authenticite": 4,
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
+        },
+        "price": "20,000$"
+      },
+      {
+        "name": "Véhicule tracker",
+        "image": "assets/img/black-market/ballas/vehicletracker.png",
+        "stats": {
+          "qualite": 5,
+          "authenticite": 4,
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
+        },
+        "price": "15,000$"
+      },
+      {
+        "name": "Balise Gps",
+        "image": "assets/img/black-market/ballas/vehiclegps.png",
+        "stats": {
+          "qualite": 5,
+          "authenticite": 4,
+          "delai": "Selon disponibilité",
+          "garantie": "Aucune"
+        },
+        "price": "15,000$"
+      }
+    ],
+    "vagos": [
+      {
+        "name": "Gilet Pare-balles",
+        "image": "assets/img/black-market/vagos/armour.png",
+        "stats": {
+          "qualite": 4,
+          "authenticite": 5,
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "150,000$"
+      },
+      {
+        "name": "Chaise de torture",
+        "image": "assets/img/black-market/vagos/torturechair.png",
+        "stats": {
+          "qualite": 5,
+          "authenticite": 4,
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "200,000$"
+      },
+      {
+        "name": "Perçeuse",
+        "image": "assets/img/black-market/vagos/dhandledrill.png",
+        "stats": {
+          "qualite": 4,
+          "authenticite": 4,
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "75,000$"
       }
     ]
   },
