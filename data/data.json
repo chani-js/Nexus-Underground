@@ -862,6 +862,217 @@
         },
         "price": "10,000$"
       }
+    ],
+    "catalyst": [
+      {
+        "name": "Eau de vie Pomme",
+        "image": "assets/img/black-market/catalyst/apple.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "45°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Abricot",
+        "image": "assets/img/black-market/catalyst/apricot.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "40°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Banane",
+        "image": "assets/img/black-market/catalyst/banana.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "55°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Mûres",
+        "image": "assets/img/black-market/catalyst/blackberry.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "68°",
+          "delai": "selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Myrtille",
+        "image": "assets/img/black-market/catalyst/blueberry.png",
+        "stats": {
+          "qualite": 3,
+          "degre": "38°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "eau de vie Cerises",
+        "image": "assets/img/black-market/catalyst/cherries.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "42°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Raisin",
+        "image": "assets/img/black-market/catalyst/grape.png",
+        "stats": {
+          "qualite": 2,
+          "degre": "60°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Kiwi",
+        "image": "assets/img/black-market/catalyst/kiwi.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "44°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie mangue",
+        "image": "assets/img/black-market/catalyst/mango.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "12°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Orange",
+        "image": "assets/img/black-market/catalyst/orange.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "16°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie pêche",
+        "image": "assets/img/black-market/catalyst/peach.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "50°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Ananas",
+        "image": "assets/img/black-market/catalyst/pineapple.png",
+        "stats": {
+          "qualite": 3,
+          "degre": "45°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Prune",
+        "image": "assets/img/black-market/catalyst/plum.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "42°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Framboise",
+        "image": "assets/img/black-market/catalyst/raspberry.png",
+        "stats": {
+          "qualite": 4,
+          "degre": "48°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Eau de vie Fraise",
+        "image": "assets/img/black-market/catalyst/strawberry.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "40°",
+          "delai": "Selon stock",
+          "garantie": "Recette traditionnelle"
+        },
+        "price": "1,000$"
+      },
+      {
+        "name": "Tuyau cuivre",
+        "image": "assets/img/black-market/catalyst/coil.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "",
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "25,000$"
+      },
+      {
+        "name": "Alembic part 1",
+        "image": "assets/img/black-market/catalyst/stillpart1.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "",
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "25,000$"
+      },
+      {
+        "name": "Alembic part 2",
+        "image": "assets/img/black-market/catalyst/stillpart2.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "",
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "25,000$"
+      },
+      {
+        "name": "Alembic part 3",
+        "image": "assets/img/black-market/catalyst/stillpart3.png",
+        "stats": {
+          "qualite": 5,
+          "degre": "",
+          "delai": "Selon stock",
+          "garantie": "Aucune"
+        },
+        "price": "25,000$"
+      }
     ]
   },
   "services": {
