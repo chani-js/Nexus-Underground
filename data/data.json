@@ -575,6 +575,160 @@
         "price": 195000,
         "category": "special",
         "availability": "available"
+      },
+      {
+        "id": "pistol_0010",
+        "name": "Gadget Pistol",
+        "image": "weapon/legere/WEAPON_GADGETPISTOL.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0011",
+        "name": "Double Action Revolver",
+        "image": "weapon/legere/WEAPON_DOUBLEACTION.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 245000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0012",
+        "name": "XM3",
+        "image": "weapon/legere/WEAPON_PISTOLXM3.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0013",
+        "name": "Marksman",
+        "image": "weapon/legere/WEAPON_MARKSMANPISTOL.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 550000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0014",
+        "name": "SNS MK2",
+        "image": "weapon/legere/WEAPON_SNSPISTOL_MK2.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 155000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0015",
+        "name": "Vintage",
+        "image": "weapon/legere/WEAPON_VINTAGEPISTOL.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0016",
+        "name": "NAVY Revolver",
+        "image": "weapon/legere/WEAPON_NAVYREVOLVER.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 245000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0017",
+        "name": "Heavy Pistol",
+        "image": "weapon/legere/WEAPON_HEAVYPISTOL.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0018",
+        "name": ".50 mm",
+        "image": "weapon/legere/WEAPON_PISTOL50.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0019",
+        "name": "Revolver MK2",
+        "image": "weapon/legere/WEAPON_REVOLVER_MK2.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 345000,
+        "category": "revolver",
+        "availability": "available"
+      },
+      {
+        "id": "pistol_0020",
+        "name": "SNS",
+        "image": "weapon/legere/WEAPON_SNSPISTOL.png",
+        "stats": {
+          "degats": 4,
+          "precision": 5,
+          "cadence": 3,
+          "portee": 4
+        },
+        "price": 75000,
+        "category": "revolver",
+        "availability": "available"
       }
     ],
     "rifles": [
